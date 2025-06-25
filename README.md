@@ -15,12 +15,15 @@ It uses **Node.js (Express)** for the backend and **React.js (Vite)** for the fr
 ---
 
 ## 📁 Folder Structure
-```project-root/
+
+```
+To-Do_List_MERN_App/
 ├── backend/ # Express API (server.js)
 ├── frontend/ # React frontend (Vite)
+├── screenshots/ # project's screenshot
+├── .gitignore # files & folders to be ignored listed here
 ├── README.md # ← You are here
 ```
-
 
 ---
 
@@ -37,12 +40,12 @@ It uses **Node.js (Express)** for the backend and **React.js (Vite)** for the fr
 
 ## 🔌 API Endpoints
 
-| Method | Endpoint        | Description                    |
-|--------|------------------|--------------------------------|
-| GET    | `/tasks`         | Fetch all tasks                |
-| POST   | `/tasks`         | Add new task (`title`)         |
-| PUT    | `/tasks/:id`     | Toggle task completion         |
-| DELETE | `/tasks/:id`     | Delete task                    |
+| Method | Endpoint     | Description            |
+| ------ | ------------ | ---------------------- |
+| GET    | `/tasks`     | Fetch all tasks        |
+| POST   | `/tasks`     | Add new task (`title`) |
+| PUT    | `/tasks/:id` | Toggle task completion |
+| DELETE | `/tasks/:id` | Delete task            |
 
 ---
 
@@ -51,42 +54,51 @@ It uses **Node.js (Express)** for the backend and **React.js (Vite)** for the fr
 ### 1. Clone the Repository
 
 ```bash
-git clone <https://github.com/Rahul-R-Devadiga/To-Do_List_MERN_App>
-cd <project-root>
+git clone https://github.com/Rahul-R-Devadiga/To-Do_List_MERN_App
+cd To-Do_List_MERN_APP
 ```
 
 ### 2. Setup and Run Backend
+
 ```bash
 cd backend
 npm install
 npm start
 ```
+
 > The backend will start at http://localhost:5000
 
 ### 3. Setup and Run Frontend
+
 ```bash
 cd ../frontend
 npm install
 npm run dev
 ```
+
 > The frontend will start at http://localhost:5173
 
 ## 🌿 Environment Variables
+
 Create a .env file inside frontend/ using the .env.example as reference:
 📄 frontend/.env
+
 ```env
 VITE_API_URL=http://localhost:5000/tasks
 ```
 
 ## 📷 Screenshot
+
 Here’s a preview of the working application:
 ![To-Do App Preview](./screenshots/To-Do_List_Screenshot.png)
 
 ## 📌 Notes
+
 - No database used (as per instructions)
 - Used in-memory array to store tasks
 - Code structured with components and pages to reflect production-grade practices
 
 ## 👨‍💻 Author
+
 - **Name:** Rahul R Devadiga
 - **Role:** Fullstack Developer (NestJS + Next.js + Node.js + MongoDB)
